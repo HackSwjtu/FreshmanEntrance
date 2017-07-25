@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./hackswjtu.style.newg.css">
+<title>帮助 - 迎新网入口</title>
+<script>
+function textInputTitleOnclick(target)
+{
+    target.parentNode.firstElementChild.focus();
+}
+
+function textInputFocus(target)
+{
+    target.parentNode.className="textInput onActive";
+}
+
+function textInputOnblur(target)
+{
+    if (target.value=="") target.parentNode.className="textInput";
+    else target.parentNode.className="textInput onFilled";
+}
+</script>
+</head>
+
+<body>
+
+<div style="height: 15px"></div>
+<div class="articlebox">
+    <div style="padding: 0 0 0 0; margin: 0" align="left"><a href="http://www.hackswjtu.com/"><img style="height: 30px" src="./hackswjtu.logo.png"></a></div>
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext" style="color: #555">在迎新网正式开放前，通过此入口可以查看班级和寝室，但似乎你在登录时遇到了麻烦</p>
+        </div>
+        <div>
+            <p class="articletext" style="color: #555">请阅读以下内容以<font color="#ED764D">排除问题</font></p>
+        </div>
+    </div>
+</div>
+
+<div style="height: 15px"></div>
+<div class="articlebox">
+    <div style="height: 0.5em"></div>
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext" style="color: #555">检查你的用户名和密码。对于在校生，用户名、密码与教务账号一致。本科生新生请查阅<font color="#ED764D" onclick="window.open('http://freshman.swjtu.edu.cn/bksdlsm.htm')">本科生登录说明</font>，研究生新生请查阅<font color="#ED764D" onclick="window.open('http://freshman.swjtu.edu.cn/yjsdlsm.htm')">研究生登录说明</font></p>
+        </div>
+        <div>
+            <p class="articletext" style="color: #555">如果你是新生，按照说明操作仍无法登录并看到<font color="#ED764D" onclick="window.open('http://ids.swjtu.edu.cn/amserver/UI/Login')">统一身份认证页面</font>，可能是因为学校还没导入你的信息，请耐心等待</p>
+        </div>
+    </div>
+</div>
+
+<div style="height: 15px"></div>
+<div class="articlebox">
+    <div style="height: 0.5em"></div>
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext" style="color: #555">如果你认为这个入口存在<font color="#ED764D">安全问题、兼容性问题、外观设计缺陷</font>，请通过电子邮件联系我，或在 GitHub 提交 Issue</p>
+        </div>
+    </div>
+</div>
+
+<div style="height: 30px"></div>
+<div class="copyrightbox">
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext">如果你对我们的项目感兴趣，请访问我们的主页和GitHub</p>
+        </div>
+        <div onclick="window.location.assign('http://www.hackswjtu.com/')">
+            <p class="articletext">主页: http://www.hackswjtu.com/</p>
+        </div>
+        <div onclick="window.location.assign('https://github.com/HackSwjtu')">
+            <p class="articletext">GitHub: https://github.com/HackSwjtu</p>
+        </div>
+    </div>
+    <div style="padding: 0.5em 0 0 0; margin: 0" align="right"><a href="http://www.hackswjtu.com/"><img style="height: 15px" src="./hackswjtu.banner_header.svg"></a></div>
+</div>
+<div style="height: 50px"></div>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+.articlebox
+{
+    font-size: 24px;
+    font-family: sans-serif;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding: 0.5em 1.667em 1em 1.667em;
+    width: 15.417em;
+    color: #333333;
+    background-color: #fff;
+    box-shadow: 0 0.0833em 0.0833em 0 rgba(0,0,0,0.14), 0 0.125em 0.0417em -0.0833em rgba(0,0,0,0.12), 0 0.0417em 0.208em 0 rgba(0,0,0,0.2);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media only screen and (max-device-width: 480px)
+{
+    .articlebox
+    {
+        font-size: 48px;
+        width: 10em;
+    }
+}
+
+.articletext
+{
+    margin: 0 0 0.214em 0;
+    padding: 0;
+    min-height: 1.4285em;
+    line-height: 1.4285em;
+    font-size: 0.583em;
+    font-weight: normal;
+}
+
+.articleblock-content
+{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.formbox
+{
+    font-size: 24px;
+    font-family: sans-serif;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding: 2em 1.667em 1.5em 1.667em;
+    width: 15.417em;
+    min-height: 17.292em;
+    height: 17.292em;
+    background-color: #fff;
+    box-shadow: 0 0.0833em 0.0833em 0 rgba(0,0,0,0.14), 0 0.125em 0.0417em -0.0833em rgba(0,0,0,0.12), 0 0.0417em 0.208em 0 rgba(0,0,0,0.2);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media only screen and (max-device-width: 480px)
+{
+    .formbox
+    {
+        font-size: 48px;
+        width: 10em;
+    }
+}
+
+.formblock-content
+{
+    margin: 0 0 1em 0;
+    padding: 0;
+    text-align: center;
+}
+.formblock-fill
+{
+    margin: 1em 0 2em 0;
+    padding: 0;
+    text-align: left;
+}
+.formblock-action
+{
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+.formDescribe > .headingText
+{
+    margin: 0.667em 0 0 0;
+    padding: 0;
+    min-height: 1.333em;
+    line-height: 1.333em;
+    font-size: 1em;
+    font-weight: normal;
+}
+.formDescribe > .headingSubtext
+{
+    margin: 0 0 0.214em 0;
+    padding: 0;
+    min-height: 1.4285em;
+    line-height: 1.4285em;
+    font-size: 0.583em;
+    font-weight: normal;
+}
+
+.textInput
+{
+    margin: 0.625em 0 0.625em 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 2.292em;
+}
+.textInput > input
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    bottom: 0.143em;
+    font-size: 0.583em;
+    border: 0;
+}
+.textInput > input:focus, .textInput > textarea:focus
+{
+    outline: none
+}
+.textInput > .inputTitle
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0.333em;
+    font-size: 0.625em;
+    color: #757575;
+    user-select: none;
+    transition-duration: 0.3s;
+}
+.textInput > .inputUnderline
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.0417em;
+    border: 0;
+    background-color: #ddd;
+}
+.textInput > .inputUnderlineH
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 0.0833em;
+    left: 15%;
+    border: 0;
+    background-color: #ED764D;
+    transition-duration: 0s;
+}
+.textInput.onActive > .inputTitle
+{
+    bottom: 2.667em;
+    font-size: 0.5em;
+    color: #ED764D;
+}
+.textInput.onActive > .inputUnderlineH
+{
+    width: 100%;
+    left: 0%;
+    transition-duration: 0.3s;
+}
+.textInput.onFilled > .inputTitle
+{
+    bottom: 2.667em;
+    font-size: 0.5em;
+    color: #757575;
+}
+.textInput.onFilled > .inputUnderlineH
+{
+    width: 100%;
+    left: 0%;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.textInput.onError
+{
+    animation: shake 0.5s linear;
+}
+.textInput.onError > .inputTitle
+{
+    bottom: 2.667em;
+    font-size: 0.5em;
+    color: #f66;
+}
+.textInput.onError > .inputUnderlineH
+{
+    width: 100%;
+    left: 0%;
+    background-color: #f66;
+    transition-duration: 0.3s;
+}
+@keyframes shake
+{
+    0% {left: 0}
+    20% {left: 1.25em}
+    40% {left: -1.25em}
+    60% {left: 0.833em}
+    80% {left: -0.833em}
+    90% {left: 0.417em}
+    100% {left: 0}
+}
+
+.buttonDefault
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: right;
+    width: 4.889em;
+    height: 2em;
+    border-bottom-left-radius: 0.1667em;
+    border-bottom-right-radius: 0.1667em;
+    border-top-left-radius: 0.1667em;
+    border-top-right-radius: 0.1667em;
+    color: #fff;
+    box-shadow: 0 0.111em 0.111em 0 rgba(0,0,0,0.14), 0 0.1667em 0.0556em -0.111em rgba(0,0,0,0.12), 0 0.111em 0.278em 0 rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 1.111em;
+    user-select: none;
+    cursor: pointer;
+    background-color: #ED764D;
+    z-index: 1;
+}
+.buttonDefault > span
+{
+    display: inline-block;
+    margin: 0.445em 0 0.445em 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.textButton
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #ED764D;
+    font-size: 0.583em;
+    font-weight: normal;
+    line-height: 2.571em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.copyrightbox
+{
+    font-size: 24px;
+    font-family: sans-serif;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding: 1em 1.667em 0.8em 1.667em;
+    width: 15.417em;
+    color: #fff;
+    background-color: #ED764D;
+    box-shadow: 0 0.0833em 0.0833em 0 rgba(0,0,0,0.14), 0 0.125em 0.0417em -0.0833em rgba(0,0,0,0.12), 0 0.0417em 0.208em 0 rgba(0,0,0,0.2);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media only screen and (max-device-width: 480px)
+{
+    .copyrightbox
+    {
+        font-size: 48px;
+        width: 10em;
+    }
+}

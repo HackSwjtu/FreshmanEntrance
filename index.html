@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./hackswjtu.style.newg.css">
+<title>西南交通大学迎新网入口 - HackSwjtu</title>
+<script>
+function textInputTitleOnclick(target)
+{
+    target.parentNode.firstElementChild.focus();
+}
+
+function textInputFocus(target)
+{
+    target.parentNode.className="textInput onActive";
+}
+
+function textInputOnblur(target)
+{
+    if (target.value=="") target.parentNode.className="textInput";
+    else target.parentNode.className="textInput onFilled";
+}
+</script>
+</head>
+
+<body>
+
+<div style="height: 15px"></div>
+<div class="articlebox">
+    <div style="padding: 0 0 0 0; margin: 0" align="left"><a href="http://www.hackswjtu.com/"><img style="height: 30px" src="./hackswjtu.logo.png"></a></div>
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext" style="color: #555">西南交通大学迎新网的正式开放时间为 8月10日-8月18日(本科生) 8月1日-8月10日(研究生)。迎新前导数据、测试时会封掉学生登录入口，但你依然可以通过以下入口登录查看你的班级和寝室</p>
+        </div>
+        <div>
+            <p class="articletext" style="color: #555">不急着登录的可以<font onclick="window.open('http://freshman.swjtu.edu.cn/')" color="#ED764D">单击此处参观迎新网</font></p>
+        </div>
+    </div>
+</div>
+
+<div style="height: 15px"></div>
+<div class="formbox"><form action="http://ids.swjtu.edu.cn/amserver/UI/Login?goto=http://welcome.swjtu.edu.cn/" method="post">
+    <div class="formblock-content">
+        <div class="formDescribe">
+            <h1 class="headingText">迎新网入口</h1>
+        </div>
+    </div>
+    <div class="formblock-fill">
+        <div class="textInput">
+            <input id="Username" name="Login.Token1" type="text" onfocus="textInputFocus(this)" onblur="textInputOnblur(this)">
+            <div class="inputTitle" onclick="textInputTitleOnclick(this)">用户名/身份证号</div>
+            <div class="inputUnderline"></div>
+            <div class="inputUnderlineH"></div>
+        </div>
+        <div class="textInput">
+            <input id="Password" name="Login.Token2" type="password" onfocus="textInputFocus(this)" onblur="textInputOnblur(this)">
+            <div class="inputTitle" onclick="textInputTitleOnclick(this)">密码/考生号后6位</div>
+            <div class="inputUnderline"></div>
+            <div class="inputUnderlineH"></div>
+        </div>
+    </div>
+    <div class="formblock-action">
+        <div class="buttonDefault" onclick="document.getElementById('loginbutton').click()"><span>登录</span></div>
+        <div class="textButton" onclick="window.open('help.html')"><span>遇到问题，需要帮助？</span></div>
+    </div>
+    <input id="loginbutton" type="submit" style="display:none" value="login">
+</form></div>
+
+<div style="height: 30px"></div>
+<div class="copyrightbox">
+    <div class="articleblock-content">
+        <div>
+            <p class="articletext">如果你对我们的项目感兴趣，请访问我们的主页和GitHub</p>
+        </div>
+        <div onclick="window.location.assign('http://www.hackswjtu.com/')">
+            <p class="articletext">主页: http://www.hackswjtu.com/</p>
+        </div>
+        <div onclick="window.location.assign('https://github.com/HackSwjtu')">
+            <p class="articletext">GitHub: https://github.com/HackSwjtu</p>
+        </div>
+    </div>
+    <div style="padding: 0.5em 0 0 0; margin: 0" align="right"><a href="http://www.hackswjtu.com/"><img style="height: 15px" src="./hackswjtu.banner_header.svg"></a></div>
+</div>
+<div style="height: 50px"></div>
+
+</body>
+</html>
